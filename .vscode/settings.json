@@ -1,5 +1,7 @@
 {
     "python.analysis.extraPaths": [
         "./lib"
-    ]
+    ],
+    "python.analysis.typeCheckingMode": "basic",
+    "python.analysis.autoImportCompletions": false
 }
