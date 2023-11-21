@@ -26,3 +26,14 @@ def test_complete_returns_correct_value():
     call.add("Task 3")
     call.add("Task 4", True)
     assert call.complete() == ["Task 1", "Task 4"]
+
+def test_give_up():
+    call = TodoList()
+    call.add("Task 1")
+    call.add("Task 2")
+    call.add("Task 3")
+    call.add("Task 4")
+    call.add("Task 5")
+    call.add("Task 6")
+    call.give_up()
+    assert call.complete() == ["Task 1", "Task 2", "Task 3", "Task 4", "Task 5", "Task 6"]

@@ -1,4 +1,5 @@
-from todo_list import *
+from lib.todo_list import *
+
 # File: lib/todo.py
 class Todo:
     # Public Properties:
@@ -12,12 +13,11 @@ class Todo:
         #   Sets the task property
         #   Sets the complete property to False
         self.task = task
-        self.complete = value
-        
+        self.value = value
 
     def mark_complete(self):
         # Returns:
         #   Nothing
         # Side-effects:
         #   Sets the complete property to True
-        self.complete = True
+        self.value = True
